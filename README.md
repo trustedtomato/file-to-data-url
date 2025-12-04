@@ -15,20 +15,20 @@ A lightweight Svelte utility that instantly converts local files into Base64 Dat
 
 ## ✨ Key Features
 
-- **📤 Drag & Drop:** Intuitive interface—click to upload or simply drop your files directly onto the dropzone.
-- **👁️ Instant Preview:** automatically renders previews for common media types (Images, Audio, Video, PDF).
-- **📋 One-Click Copy:** Copy the entire Base64 string to your clipboard instantly.
-- **📊 Size Analysis:** Real-time comparison between the **Original File Size** and the **Base64 Payload Size** (visualizing the ~33% overhead).
-- **🔒 Privacy First:** All processing happens client-side in the browser. Your files are never uploaded to a server.
+- **📤 Drag & drop:** Click to upload or simply drop your files directly onto the dropzone.
+- **👁️ Instant preview:** automatically renders previews for common media types (images, audio, video, PDF, HTML...).
+- **📋 One-click copy:** Copy the entire base64 string to your clipboard instantly.
+- **📊 Size analysis:** Comparison between the original file size and the base64 payload size (visualizing the ~33% overhead).
+- **🔒 Privacy first:** All processing happens client-side in the browser. Your files are never uploaded to a server.
 
 ## 💡 Use Cases
 
 Why convert files to Base64 strings? Here are a few common scenarios:
 
-1.  **Single-File HTML Distribution:**
+1.  **Single-file HTML distribution:**
     Embed images and scripts directly into an HTML file so you can share a standalone document (e.g., email templates, offline reports) without needing a folder of assets.
 
-2.  **Performance Optimization (Small Assets):**
+2.  **Performance optimization (small assets):**
     Reduce HTTP requests by embedding tiny icons, logos, or noise textures directly into your CSS or HTML.
 
     ```css
