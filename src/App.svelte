@@ -120,7 +120,7 @@
       </div>
 
       <div>
-        <div class="mb-2">base64 output</div>
+        <div class="mb-2">base64 data URL</div>
         <div class="relative">
           <input
             value={base64Output}
