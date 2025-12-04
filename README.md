@@ -37,18 +37,18 @@ Why convert files to Base64 strings? Here are a few common scenarios:
     }
     ```
 
-## 🛠️ Development
+## Development
 
 If you want to run this project locally or contribute:
 
-1.  **Clone the repository**
-2.  **Install dependencies**
+1.  Clone the repository
+2.  Install dependencies
 
     ```bash
     pnpm install
     ```
 
-3.  **Start the development server**
+3.  Start the development server
     ```bash
     pnpm run dev
     ```
