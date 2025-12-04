@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { loadingState } from './loading-state.svelte'
+
   let props = $props<{
     src: string
     name: string
@@ -20,12 +22,18 @@
 {#if isImage}
   <img
     src={props.src}
-    class="w-full h-auto border rounded border-slate-300"
-    alt={props.name} />
+    class="h-auto w-full rounded border border-slate-300"
+    alt={props.name}
+    onload={() => {
+      loadingState.value = false
+    }} />
 {:else}
   <iframe
     sandbox="allow-same-origin allow-scripts allow-forms"
-    class="w-full border rounded border-slate-300 bg-slate-50"
+    class="h-96 w-full rounded border border-slate-300 bg-slate-50"
+    onload={() => {
+      loadingState.value = false
+    }}
     src={props.src ||
       'data:text/html,Upload%20a%20file%20to%20preview%20its%20content.'}
     title={props.name}>
